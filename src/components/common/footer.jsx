@@ -19,7 +19,10 @@ const Footer = () => {
 							<Link to="/projects">Projects</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/articles">Articles</Link>
+							<Link to="/publications">Publications</Link>
+						</li>
+						<li className="footer-nav-link-item">
+							<Link to="/achievements">Achievements</Link>
 						</li>
 						<li className="footer-nav-link-item">
 							<Link to="/contact">Contact</Link>
@@ -29,7 +32,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2023 Tharindu.dev. All Rights Reserved.
+						© 2023 Sayantan.Arko. All Rights Reserved.
 					</div>
 				</div>
 			</div>

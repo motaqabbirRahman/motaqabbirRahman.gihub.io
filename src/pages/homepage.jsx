@@ -15,13 +15,15 @@ import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
+import PreviousWorks from "../components/homepage/previousWorks";
 import AllProjects from "../components/projects/allProjects";
-
+import Skills from "../components/homepage/skills";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
+import CoCurricular from "../components/homepage/coCurricular";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -91,20 +93,34 @@ const Homepage = () => {
 					<div className="homepage-container">
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">
-									{INFO.homepage.title}
-								</div>
+							<div className="title homepage-title">
+							<div className="title homepage-title">
+								Passionate about robotics and technology<span style={{ color: "var(--link-color)" }}>.</span>
+							</div>
 
-								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
-								</div>
+						</div>
+
+
+						<div className="subtitle homepage-subtitle">
+							<p style={{ textAlign: "justify" }}>
+							<div className="your-container-class">
+									I'm a passionate enthusiast in the exciting world of robotics and technology, fueled by my commitment to drive innovation and pioneering advancements in
+									<strong>marine robotics</strong>,
+									<strong>agriculture technology</strong>, and
+									<strong>smart embedded devices</strong>.
+
+									My journey reflects a blend of creativity and technical exploration, from conceptualizing robotics-based reality shows to contributing to AI-based disaster risk reduction. Let's embark on a journey of innovation together.
+							</div>
+							</p>
+						</div>
+
 							</div>
 
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="homepage.jpg"
+											src="arko.jpg"
 											alt="about"
 											className="homepage-image"
 										/>
@@ -164,32 +180,34 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
+
+							<div className="homepage-button-container">
+              <a
+                href="../cv.pdf"  // Replace with the actual path to your CV file
+                download="Your_CV_Name.pdf"  // Set the desired name for the downloaded file
+                className="homepage-button"
+              >
+                Download CV
+              </a>
+            </div>
+
 						</div>
 
 						<div className="homepage-projects">
-							<AllProjects />
+						
 						</div>
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
+									<div className="homepage-article">
+										<Works />
+										<CoCurricular/>	
 									</div>
-								))}
 							</div>
 
-							<div className="homepage-works">
-								<Works />
+							<div className="homepage-works">	
+							    <Skills/>	
+								
 							</div>
 						</div>
 

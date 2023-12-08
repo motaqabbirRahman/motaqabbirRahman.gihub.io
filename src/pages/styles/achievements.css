@@ -1,0 +1,103 @@
+/* Add or modify styles as needed */
+
+body {
+  background-color: #fff; /* White background for the body */
+}
+
+.achievements-logo-container {
+  display: flex;
+  justify-content: left;
+  padding-top: 25px;
+}
+
+.achievements-logo {
+  display: flex;
+  position: fixed;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  top: 4vh;
+}
+
+.achievements-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 120px;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.achievements-socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.achievements-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  gap: 20px;
+}
+
+.achievement {
+  background-color: #fff; /* White background for each achievement */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.achievement-image {
+  width: 100%;
+  border-radius: 8px; /* Add border radius to round the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  margin-bottom: 10px;
+  margin-top: 10px; /* Adjust the margin at the bottom of each image */
+}
+
+
+.highlight {
+  font-weight: bold;
+  color: var(--link-color); /* Set your desired color for highlighted text */
+}
+
+.achievement:hover {
+  transform: scale(1.02);
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--link-color) /* Red color for highlighted text */
+}
+
+.achievement-role {
+  color: var(--secondary-color); /* Red text color for the role */
+}
+
+.style {
+  /* Your existing style for highlighting */
+  background-image: linear-gradient(rgb(224, 112, 112), rgb(241, 89, 89));
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: 0% 110%;
+  transition: background-size 0.7s, background-position 0.5s ease-in-out;
+}
+
+.style:hover {
+  background-size: 100% 100%;
+  background-position: 100% 0%;
+  transition: background-position 0.7s, background-size 0.5s ease-in-out;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

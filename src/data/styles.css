@@ -1,14 +1,39 @@
 :root {
-	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
-	/* ---------------------- */
+  /* ------- colors ------- */
+  --primary-color: #303030; /* Dark gray */
+  --secondary-color: #505050; /* Lighter gray */
+  --tertiary-color: #707070; /* Even lighter gray */
+  --quaternary-color: hsl(0, 0%, 94%); /* Off-white */
+  --link-color: rgb(255, 49, 49); /* Dodger blue or your preferred link color */
+  /* ---------------------- */
 
-	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
-	--secondary-font: "Roboto", sans-serif;
-	/* --------------------- */
+  /* ------- fonts ------- */
+  --primary-font: "Fira Code", monospace; /* Nerd Font */
+  --secondary-font: "Fira Code", monospace; /* Use the same font for variety */
+  /* --------------------- */
+}
+
+/* Additional styles if needed */
+body {
+  font-family: var(--primary-font);
+  /* Add other styles as needed */
+}
+
+
+.style {
+  /* Your existing styles */
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(rgb(224, 112, 112), rgb(241, 89, 89));
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: 0% 110%;
+  transition: background-size 0.7s, background-position 0.5s ease-in-out;
+  color: black; /* Initial text color */
+}
+
+.style:hover {
+  background-size: 100% 100%;
+  background-position: 100% 0%;
+  transition: background-position 0.7s, background-size 0.5s ease-in-out;
+  color: white; /* Text color on hover/red background */
 }

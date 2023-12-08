@@ -1,0 +1,95 @@
+.explorations-logo-container {
+  display: flex;
+  justify-content: left;
+  padding-top: 25px;
+}
+
+.explorations-logo {
+  display: flex;
+  position: fixed;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  top: 4vh;
+  z-index: 999;
+}
+
+.explorations-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding-top: 120px;
+  text-align: justify;
+}
+
+/* Add margin to the top of the image gallery */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* Adjust the gap as needed */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+/* Use flex-basis to achieve a 1-2-1 column layout */
+.gallery-item {
+  flex: 1;
+  flex-basis: calc(33.33% - 16px); /* Adjust the width and gap as needed */
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Add this code to your existing CSS or create a new file for lightbox styles */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 700px; /* Set your desired max width */
+  max-height: 700px; /* Set your desired max height */
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) {
+  .explorations-container {
+    padding-top: 60px;
+  }
+}

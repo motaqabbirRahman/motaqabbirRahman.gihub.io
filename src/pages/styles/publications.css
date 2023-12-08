@@ -1,0 +1,46 @@
+.publications-logo-container {
+  display: flex;
+  justify-content: left;
+  padding-top: 25px;
+}
+
+.publications-logo {
+  display: flex;
+  position: fixed;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  top: 4vh;
+  z-index: 999;
+}
+
+.publications-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  margin: 0;
+  padding-top: 120px;
+  margin-bottom: 80px; /* Add a bottom margin to create space for the footer */
+  text-align: justify;
+}
+/* ... (other styles) */
+
+.publication-item a {
+  color: var(--link-color); /* Replace with your theme color */
+  text-decoration: none;
+}
+
+.publication-item a:hover {
+  text-decoration: underline; /* Add underline on hover if needed */
+}
+
+/* ... (other styles) */
+
+
+
+@media (max-width: 600px) {
+  .publications-container {
+    padding-top: 60px;
+  }
+}

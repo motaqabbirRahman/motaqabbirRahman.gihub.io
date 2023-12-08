@@ -40,7 +40,7 @@ const Contact = () => {
 
 					<div className="contact-container">
 						<div className="title contact-title">
-							Let's Get in Touch: Ways to Connect with Me
+							Let's Get in Touch!
 						</div>
 
 						<div className="subtitle contact-subtitle">
@@ -49,7 +49,7 @@ const Contact = () => {
 							suggestions. If you have a specific question or
 							comment, please feel free to email me directly at
 							&nbsp;{" "}
-							<a href={`mailto:${INFO.main.email}`}>
+							<a className="style" href={`mailto:${INFO.main.email}`}>
 								{INFO.main.email}
 							</a>
 							. I make an effort to respond to all messages within
@@ -60,6 +60,7 @@ const Contact = () => {
 							possible. Finally, if you prefer to connect on
 							social media, you can find me on{" "}
 							<a
+							  className="style"
 								href={INFO.socials.instagram}
 								target="_blank"
 								rel="noreferrer"
